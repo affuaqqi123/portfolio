@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AQEEL MOHAMMED'S PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h3 class="name">AQEEL <span class="lname">MOHAMMED</span></h3>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>.Net Developer (Full Stack)</p>
+                <h1>Hi, <br>I'm <span>Aqeel Mohammed</span><br>from India</h1>
+            </div>
+        </div>
+    </div>
+    <!------------------------------About Section---------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+
+                    <p>I have 7 years of experience in Information Technology where I worked as a .Net Developer and also worked for an organization as a DevOps Engineer.
+                         I believe in working with passion and love to accomplish my goals. 
+                         I enjoy collaboration and teamwork because it helps me to develop my skills. I excel under pressure and can handle multi-tasking.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>.Net Technologies</span><br>.Net Framework (4.5/4.0/3.5/3.0/2.0), .Net Core, ASP.NET, ADO.NET, C#.NET, SharePoint, 
+                                Entity Framework , MVC, Web API, Win Forms, Web Forms, AJAX, jQuery, AngularJS.</li>
+                            <li><span>Languages</span><br>C#.Net, XML, Java Script, HTML, HTML5, XSL</li>
+                            <li><span>Version Control Tools</span><br>Team Foundation Server (TFS), GitHub, SubVersion (SVN).</li>
+                            <li><span>Data Base</span><br>My SQL, SQL Server (2012, 2008,2005),MS Access, T-SQL</li>
+                            <li><span>Cloud Service</span><br>Amazon Web Services – EC2,S3,CloudWatach,IAM, Route-53,  VPN, API Gateway, Google Cloud Platform (GCP)
+                                </li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - 2023</span><br>.Net Developer at Digital Bow - Hyderabad, India</li>
+                            <li><span>2019 - 2021</span><br>DevOps Engineer at Key Cube Technologies - Hyderabad, India</li>
+                            <li><span>2018 - 2019</span><br>.Net Developer at Bell Litho Inc. - Chicago, Illinois</li>
+                            <li><span>2013 - 2015</span><br>.Net Developer at First American India - Hyderabad, India</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Master of Science(MS)  - 2017</span><br>Tuskegee University - Tuskegee, Alabama, USA</li>
+                            <li><span>Master of Computer Application(MCA) - 2010</span><br>Jawaharlal Nehru Technical University - Hyderabad, India</li>
+                            <li><span>Bachelor of Science- B.Sc (Comp.) - 2007</span><br>Osmania University - Hyderabad, India</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------Services------------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa fa-code" aria-hidden="true"></i>
+                    <h2>User Interface Design</h2>
+                    <h3>Design user interfaces using HTML, CSS, Bootstrap, JavaScript,AngularJS </h3>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    
+                    <i class="fa fa-crop" aria-hidden="true"></i>
+                    <h2>Responsive Web Design</h2>
+                    <h3>Plan and arrange content for an overall website which functions as client requirement and make sure it is user-friendly</h3>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa fa-crosshairs" aria-hidden="true"></i>
+                    <h2>Backend</h2>
+                    <h3>Work mainly on Server Side Development, Back-end logic, Databases, Architecture, APIs, Write code which helps to communicate to Database and more</h3>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------Portfolio------------------------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Banking Website</h3>
+                        <p>Internet banking application allow you to make online financial transactions from anywhere.
+                        </p>
+                        <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Institutional Website</h3>
+                        <p>This application gives you all the information regarding all the Courses, Admissions, Fee structures, Course curriculum and more.                        
+                        </p>
+                        <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>E-Commerce Website</h3>
+                        <p>The online shopping application connects you to online store where you can shop variety of items
+                            
+                        </p>
+                        <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!----------------------Contact Section------------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa fa-paper-plane"></i>aqmohammed123@gmail.com</p>
+                    <p><i class="fa fa-phone-square"></i>+966-530503890</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa fa-facebook-official"></i></a>
+                        <a href="#"><i class="fa fa-twitter-square"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa fa-copyright"></i> Aqeel Mohammed. made with Aqeel with lots of <i class="fa fa-heart"></i>
+            </p>
+        </div>
+    </div>
+    <a href="#" class="to-top">
+        <i class="fa fa-chevron-up"></i>
+    </a>
+
+    <!----------------------JavaScript------------------------------->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+            setTimeout(function () {
+                sidemenu.style.right = "-200px";
+            }, 4000)
+
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwTLs4ufPkdYACF9kvNHd5rXKNOwLLD9F76VRRTyID37BQ4mVnDrCwh9kOPWAv3acbtPw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script>
+        const toTop = document.querySelector(".to-top");
+        window.addEventListener("scroll", () => {
+            if (window.pageYOffset > 100) {
+                toTop.classList.add("active");
+            }
+            else {
+                toTop.classList.remove("active");
+            }
+        })
+    </script>
+</body>
+
+</html>
